@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fun Fact</string>
+
+    <string name="funFact_didYouKnow">Did you know?</string>
+    <string name="action_settings">Settings</string>
+    <string name="funFact">Ants Stretch when they wake up in the morning</string>
+    <string name="funFact_button">Show Another Fun Fact</string>
+</resources>
