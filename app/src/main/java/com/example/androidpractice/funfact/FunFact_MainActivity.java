@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class FunFact_MainActivity extends ActionBarActivity {
 
+    private FactBook mFactBook =  new FactBook();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class FunFact_MainActivity extends ActionBarActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String fact = mFactBook.getFact();
               //array for storing facts
 
 
@@ -29,7 +32,7 @@ public class FunFact_MainActivity extends ActionBarActivity {
 
 
                 //Update the with our dynamic fact
-                factLabel.setText("");
+                factLabel.setText(fact);
             }
         };
         showFactButton.setOnClickListener(listener);
